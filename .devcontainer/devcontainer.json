@@ -8,5 +8,22 @@
 		"ghcr.io/devcontainers-contrib/features/poetry:2": {
 			"version": "latest"
 		}
-    }
+    },
+    "customizations": {		
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [				
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",				
+				"ms-python.isort",
+				"ms-toolsai.jupyter",
+				"humao.rest-client",
+				"Postman.postman-for-vscode",
+				"cweijan.vscode-postgresql-client2",
+				"redhat.vscode-yaml"
+			]
+		}
+	},
 }
