@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rapid-promptgen"
+version = "0.1.0"
+description = ""
+authors = ["Srinath Janakiraman <me@vjsrinath.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "rapid_promptgen"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.26.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
