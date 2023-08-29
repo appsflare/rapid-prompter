@@ -1,15 +1,18 @@
 [tool.poetry]
-name = "rapid-promptgen"
+name = "rapid_promptgen"
 version = "0.1.0"
 description = ""
 authors = ["Srinath Janakiraman <me@vjsrinath.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "rapid_promptgen"}]
+packages = [{include = "rapid_promptgen", from="src"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.12"
 streamlit = "^1.26.0"
+openai = "^0.27.9"
+argilla = "^1.14.1"
+python-dotenv = "^1.0.0"
 
 
 [build-system]
